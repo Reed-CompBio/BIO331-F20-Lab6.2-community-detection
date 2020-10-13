@@ -2,7 +2,7 @@
 
 In this lab, you will implement the Girvan-Newman community detection method.  This method is from the paper [Community Structure in Social and Biological Networks](https://arxiv.org/pdf/cond-mat/0112110v1.pdf) (PNAS 2002), and is named after the two authors.  
 
-##  **Task A:** Overview & Pseudocode
+## :star: **Task A:** Overview & Pseudocode
 
 This divisive algorithm has the following steps:
 
@@ -38,7 +38,7 @@ The method you write should output a partition/grouping that increases the numbe
 
 Talk through your pseudocode with Anna before continuing.
 
-##  **Task B:** Preliminaries & Provided Methods
+## :star: **Task B:** Preliminaries & Provided Methods
 
 First, _clone this repository_ using the GitHub Desktop.  You will not need to commit your code in this lab, but it's good practice to start cloning repositories. Navigate to the location on your computer where the repository is cloned and open `lab6.py` and `lab_utils.py` starter code.
 
@@ -86,7 +86,7 @@ lab_utils.remove_edge(edges[0],edges,adj_list)
 print(len(edges))
 ```
 
-##  **Task C:** Write a Community Detection algorithm
+## :star: **Task C:** Write a Community Detection algorithm
 
 Following the lab's pseudocode, implement the rest of the Girvan-Newman algorithm.  This function should return a single list that captures all partitions of the graph.  My function definition has four arguments:
 
@@ -100,7 +100,7 @@ However, you may choose to use different variables.
 
 Once you have a partition of nodes, you can post a colored version of the graph by passing in a single partition (an element of the returned list) as the last argument to the `viz_graph()` function.
 
-##  **Task D:** Apply the Community Detection Algorithm to a Mouse Connectome
+## :star: **Task D:** Apply the Community Detection Algorithm to a Mouse Connectome
 
 This mouse network is from [Neurodata](https://neurodata.io/project/connectomes/), a repository of connectomes.  The network is from [Network anatomy and in vivo physiology of visual cortical neurons](https://www.nature.com/articles/nature09802) by Bock et al. (Nature 2011).  It represents the mouse primary visual cortex based on identifying neurons' local network from electron microscopy.  Components of this network are shown in Figures 5b & 5c below:
 
