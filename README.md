@@ -8,7 +8,7 @@ This divisive algorithm has the following steps:
 
 1. Assign all nodes to a single cluster.
 
-2. Calculate the _edge betweenness_ of all edges in the network.  You are given a `lab_utils.get_betweenness_dictionary()` that returns a dictionary of (node,edge betweenness) values.
+2. Calculate the _edge betweenness_ of all edges in the network.  You are given a `lab_utils.get_betweenness_dictionary()` that returns a dictionary of (edge,edge_betweenness) values.
 
 3. Remove the edge with the highest betweenness. You are given a `lab_utils.remove_edge()` function that removes the edge from the edge list and adjacency list.
 
@@ -21,13 +21,13 @@ This divisive algorithm has the following steps:
 The method you write should output a partition/grouping that increases the number of groups by one each time. Note that this is a _single_ list, where each element of the list is a partition of nodes.
 
 ```
-[[['v1', 'v2', 'v3', 'v4', 'v5', 'v6', 'v7', 'v8']]
-[['v1', 'v2', 'v3'], ['v4', 'v5', 'v6', 'v7', 'v8']]
-[['v1', 'v2', 'v3'], ['v4'], ['v5', 'v6', 'v7', 'v8']]
-[['v1', 'v2', 'v3'], ['v4'], ['v5'], ['v6', 'v7', 'v8']]
-[['v1', 'v2'], ['v3'], ['v4'], ['v5'], ['v6', 'v7', 'v8']]
-[['v1'], ['v2'], ['v3'], ['v4'], ['v5'], ['v6', 'v7', 'v8']]
-[['v1'], ['v2'], ['v3'], ['v4'], ['v5'], ['v6'], ['v7', 'v8']]
+[[['v1', 'v2', 'v3', 'v4', 'v5', 'v6', 'v7', 'v8']],
+[['v1', 'v2', 'v3'], ['v4', 'v5', 'v6', 'v7', 'v8']],
+[['v1', 'v2', 'v3'], ['v4'], ['v5', 'v6', 'v7', 'v8']],
+[['v1', 'v2', 'v3'], ['v4'], ['v5'], ['v6', 'v7', 'v8']],
+[['v1', 'v2'], ['v3'], ['v4'], ['v5'], ['v6', 'v7', 'v8']],
+[['v1'], ['v2'], ['v3'], ['v4'], ['v5'], ['v6', 'v7', 'v8']],
+[['v1'], ['v2'], ['v3'], ['v4'], ['v5'], ['v6'], ['v7', 'v8']],
 [['v1'], ['v2'], ['v3'], ['v4'], ['v5'], ['v6'], ['v7'], ['v8']]]
 ```
 
